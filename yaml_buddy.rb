@@ -1,7 +1,8 @@
 # Module that can be included (mixin) to take and output Yaml data
 module YamlBuddy
-  require "yaml"
-  # take_yaml: takes a yaml string and converts it into a data structure in @data
+  require 'yaml'
+  # take_yaml
+  # takes a yaml string and converts it into a data structure in @data
   def take_yaml(yaml)
     @data = YAML.load(yaml)
   end
